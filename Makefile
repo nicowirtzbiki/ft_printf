@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+         #
+#    By: nico <nico@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/30 15:24:32 by nwirtzbi          #+#    #+#              #
-#    Updated: 2025/10/30 17:58:35 by nwirtzbi         ###   ########.fr        #
+#    Updated: 2025/11/03 18:09:09 by nico             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,8 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 #Outras regras:
-clean: rm -f $(OBJ)
+clean: 
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME) test
